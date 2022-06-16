@@ -68,7 +68,7 @@ class Column {
                 bestElevatorInformations = this.checkIfElevatorIsBetter(2,this.elevatorList[element],bestScore,referenceGap,bestElevator,requestedFloor)
             //The elevator is higher than me, is coming down and I want to go down
             } else if(requestedFloor < this.elevatorList[element].currentFloor && this.elevatorList[element].direction == "down" && requestedDirection == this.elevatorList[element].direction){
-                bestElevatorInformations = this.checkIfElevatorIsBetter(2,this.elevatorList[element],bestScore,referenceGap,bestElevator,requestedFloor,)
+                bestElevatorInformations = this.checkIfElevatorIsBetter(2,this.elevatorList[element],bestScore,referenceGap,bestElevator,requestedFloor)
             //The elevator is idle
             }else if(this.elevatorList[element].status == "idle"){
                 
