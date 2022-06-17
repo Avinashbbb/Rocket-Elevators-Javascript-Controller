@@ -1,17 +1,75 @@
-# Rocket-Elevators-Javascript-Controller
-This is the template to use for the javascript residential controller. You will find the classes that should be used along with some methods described in the requirements.
-The necessary files to run some tests are also present. With Node JS and NPM installed, first run:
+line 5 to 6
+creating global variables that can be used in the code later
 
-`npm install`
+colum class block
+a class called colum is created.
+it has a couple of methods and variables.
 
-and then, to run the tests:
+first method in line 18 is purely for the simulation.this creates
+# dependence's
+class Elevator 
 
-`npm test`
+second method creates a callbutton for all the elevators taking all the floor into account.
+# dependence's 
+class Callbutton 
 
-With a fully completed project, you should get an output like:
+third method is request elevators. this function creates a request for th elevators by calling a another function and instructs the elevator to move or to operate doors.
+# dependence's
+findElevator, move method from class elevator and opratedoors method from class elevator 
 
-![Screenshot from 2021-06-10 16-31-36](https://user-images.githubusercontent.com/28630658/121592985-5edd2600-ca09-11eb-9ff0-38215b74c67c.png)
+the forth method is find elevator
+this elevator evaluates a conditions and returns the best elevator to get the got done. 
+# dependences 
+checkifEvevatorIsBetter
 
-All of these files can be left in your final project but no scenarios should be present in your code. The grader will run tests similar to the ones provided.
+the next method is to check which elevator to send for the jod this returns a object called best elevator information.
 
-Of course, make sure to edit this Readme file to describe your own project!
+Line 80.
+this is a class called elevator.
+this has a few methods and keys.
+# dependences 
+ Class Door.
+
+1st method in class elevator:
+createFloorRequestButtons:
+this  creates a array of floors that has requested requested for a elevator!
+# dependences 
+class FloorRequestButton
+
+2nd method in class elevator:
+requestFloor:
+this also does create a array of requested floor. this also oprates the doors and moves the elevators.
+# dependences 
+method move and method opratedoors
+
+3rd method:
+move:
+tis functions moves the elevator as and when instructed.
+# dependences 
+sortFloorList
+
+4th method:
+sortFloorList:
+this function sorts the floorrequest according to the instructions
+# dependences
+floorRequestList
+
+5th method:
+operateDoors
+this method oprates the doors
+
+class Callbutton:
+this is a blue print with a few keys.
+
+class FloorRequestButton:
+this is a blue print with a few keys.
+
+class Door.
+this is a class with a few keys
+
+
+
+
+
+
+
